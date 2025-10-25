@@ -1,5 +1,7 @@
 # Harjutus 08
 
 
-nimed = [6,5,54,5,5,3]
-print(nimed[-1])
+sonastik = {'nimi': 'Margus', 'vanus': 25}
+
+print (sonastik['nimi'])
+print (sonastik['nimi'])
