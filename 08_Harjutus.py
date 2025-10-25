@@ -21,7 +21,7 @@ try:
         if kogus <= tooted[toode]["kogus"]:
             print("------ARVE-------")
             summa = kogus * tooted[toode]["hind"]
-            print(f"{summa}eur")
+            print(f"{round(summa,2)}eur")
         else: 
             print("Pole piisavalt!")
     else:
