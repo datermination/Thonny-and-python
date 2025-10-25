@@ -30,8 +30,8 @@ try:
     tooted[toode]["kogus"] -= kogus  #võtab koguse maha
     print(tooted)
 
-except:
-    print("Ole nüüd normaalne!")
+except Exception as e:
+    print("Ole nüüd normaalne!", e)
 
 
 # telefonid={
