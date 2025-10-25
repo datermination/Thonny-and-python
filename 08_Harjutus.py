@@ -18,7 +18,7 @@ try:
     kogus = int(input("Vali kogus: "))
 
     if toode in tooted.keys():
-        if kogus <= tooted[toode]["kogus"]:
+        if kogus <= tooted[toode]["kogus"] and kogus > 0:
             print("------ARVE-------")
             summa = kogus * tooted[toode]["hind"]
             print(f"{round(summa,2)}eur")
@@ -27,8 +27,8 @@ try:
     else:
         print(f"Toodet '{toode}' ei leitud")
 
-
-
+    tooted[toode]["kogus"] -= kogus  #võtab koguse maha
+    print(tooted)
 
 except:
     print("Ole nüüd normaalne!")
